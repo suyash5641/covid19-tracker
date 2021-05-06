@@ -1,6 +1,4 @@
-import React, { useState,useEffect } from 'react';
-import axios from 'axios';
-import Summary from './Summary';
+import React, { useState} from 'react';
 function State()
 {
     const [Item,setItems]=useState("");
@@ -22,22 +20,17 @@ if(GivenDate > CurrentDate){
 }
        if(Item!=="")
         {
-       // console.log(Item);
-       // console.log(dateList);
        // console.log("https://api.covid19api.com/live/country/"+Item);
     const result=fetch("https://api.covid19api.com/live/country/"+Item) 
     .then((data)=>data.json())
     .then((data)=>{ 
         console.log(data[0].Confirmed);
-       // console.log(zw);
         setVals(data);
           }) 
           .catch(err=>{
             alert("no data found for current country");
         })
         }
-//console.log(d);
-//console.log(a);
    
 }
      return <>

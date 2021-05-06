@@ -1,6 +1,4 @@
-import React, { useState,useEffect } from 'react';
-import axios from 'axios';
-import Summary from './Summary';
+import React, { useState} from 'react';
 function Track()
 {
     const [Items,setItem]=useState("");
@@ -11,7 +9,6 @@ function Track()
         setItem(inputList);
          if(Items!=="")
         {
-       // console.log(Items);
         // console.log("https://api.covid19api.com/dayone/country/"+Items);
     const re=fetch("https://api.covid19api.com/dayone/country/"+Items) 
     .then((z)=>z.json())

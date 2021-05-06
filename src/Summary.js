@@ -1,8 +1,6 @@
 import React from 'react';
 function Summary(props)
 {
-//const currentDate=props.currentDate;
-//const summary=props.summary;
  return (
       <div className="row"> 
       <div className="NewConfirmed"> 
