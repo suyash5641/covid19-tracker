@@ -25,6 +25,9 @@ function State()
        // console.log(zw);
         setVals(data);
           }) 
+          .catch(err=>{
+            alert("no data found for current country");
+        })
         }
 //console.log(d);
 //console.log(a);

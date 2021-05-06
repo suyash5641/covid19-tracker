@@ -21,9 +21,6 @@ function Details()
            console.log(response);
 
          })
-         .catch(err=>{
-
-         })
          axios
          .get("https://api.covid19api.com/live/country/india")
          .then(r=>{
@@ -36,27 +33,17 @@ function Details()
         //console.log(response.data.Countries);
        // const[...item]=response.data.Countries;
        // console.log(item);
-       
-       
-    },[]) 
+ },[]) 
     return(
          <>
-          
-          
-          <Summary summary={global} cd={currentDate} />
-        
-          
-          <table>
+           <Summary summary={global} cd={currentDate} />
+        <table>
               <thead>
                   <tr>
                       <th>Country</th>
                       <th>New Confirmed</th>
                       <th>Total Recovered</th>
                       <th>Total Deaths</th>
-                      
-
-
-
                   </tr>
               </thead>
               <tbody>
