@@ -18,6 +18,9 @@ function Track()
     .then((z)=>{ 
         console.log(z[0].Confirmed);
         setVal(z);
+        })
+        .catch(err=>{
+            alert("no data found for current country");
         }) 
     }
 }

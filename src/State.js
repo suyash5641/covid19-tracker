@@ -56,6 +56,7 @@ if(GivenDate > CurrentDate){
        <table>
               <thead>
                   <tr>
+                      <th>Country</th>
                       <th>State</th>
                       <th>Date</th>
                       <th>Active</th>
@@ -68,7 +69,7 @@ if(GivenDate > CurrentDate){
                 
                  <>
                  <tr>
-                  
+                  <td>{u.Country}</td>
                  <td>{(u.Province=="")? "No data":u.Province }</td>
                  <td>{u.Date.substring(0,10)}</td>
                  <td>{u.Active}</td>
