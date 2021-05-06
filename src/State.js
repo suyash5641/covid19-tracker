@@ -13,6 +13,13 @@ function State()
     {  
         setItems(inputLists);
        setD(dateList);
+       var GivenDate=dateList;
+       var CurrentDate = new Date();
+GivenDate = new Date(GivenDate);
+
+if(GivenDate > CurrentDate){
+    alert('Given date is greater than the current date.');
+}
        if(Item!=="")
         {
        // console.log(Item);
@@ -62,7 +69,7 @@ function State()
                  <>
                  <tr>
                   
-                 <td>{u.Province}</td>
+                 <td>{(u.Province=="")? "No data":u.Province }</td>
                  <td>{u.Date.substring(0,10)}</td>
                  <td>{u.Active}</td>
                  <td>{u.Confirmed}</td>

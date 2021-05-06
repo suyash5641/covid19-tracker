@@ -24,10 +24,10 @@ function App()
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/state">State</Link>
+              <Link to="/state">StateWise data</Link>
             </li>
             <li>
-              <Link to="/track">Country</Link>
+              <Link to="/track">Country data</Link>
             </li>
           </ul>
         </nav>
